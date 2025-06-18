@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/sort.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/sort",
+      "methods": ["POST"],
+      "dest": "/api/sort"
+    }
+  ]
+}
